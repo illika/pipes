@@ -1,7 +1,8 @@
-<h1>
-  {{ nombre | uppercase }}
-</h1>
+<div class="text-layout">
+  <h1>
+    {{ nombre | uppercase }}
+  </h1>
+</div>
 
-<button (click)="mostrarNombre()">
-  Mostrar Nombre
+<button pButton (click)="mostrarNombre()" label="Mostrar Nombre">
 </button>
