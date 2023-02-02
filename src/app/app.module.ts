@@ -3,6 +3,7 @@ import { BrowserModule } from '@angular/platform-browser';
 
 import { AppComponent } from './app.component';
 import { AppRouterModule } from './app-router.module';
+import { VentasModule } from './ventas/ventas.module';
 
 import { SharedModule } from './shared/shared.module';
 import { RouterModule } from '@angular/router';
@@ -15,7 +16,8 @@ import { RouterModule } from '@angular/router';
     BrowserModule,
     AppRouterModule,
     RouterModule,
-    SharedModule,    
+    SharedModule, 
+    VentasModule,
   ],
   providers: [],
   bootstrap: [AppComponent]
