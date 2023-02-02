@@ -16,6 +16,8 @@ import { registerLocaleData } from '@angular/common';
 registerLocaleData(localEsPe);
 //registerLocaleData(localFr);
 
+import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
+
 @NgModule({
   declarations: [
     AppComponent
@@ -26,6 +28,8 @@ registerLocaleData(localEsPe);
     RouterModule,
     SharedModule, 
     VentasModule,
+
+    BrowserAnimationsModule,
   ],
   providers: [
     {provide: LOCALE_ID, useValue: 'es-PE' }
