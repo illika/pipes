@@ -11,8 +11,10 @@ import { RouterModule } from '@angular/router';
 import { LOCALE_ID } from '@angular/core';
 // Cambiar Local
 import localEsPe from '@angular/common/locales/es-PE';
+import '@angular/common/locales/global/fr';
 import { registerLocaleData } from '@angular/common';
 registerLocaleData(localEsPe);
+//registerLocaleData(localFr);
 
 @NgModule({
   declarations: [
