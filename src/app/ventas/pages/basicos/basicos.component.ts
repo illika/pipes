@@ -12,6 +12,8 @@ export class BasicosComponent {
   nombreUpper: string = "ILLIKA";
   nombreCompleto: string = "iLliKa pA. vZ.";
 
+  fecha: Date = new Date(); // Hoy
+
   constructor() { }
 
 }
