@@ -1,4 +1,5 @@
 import { Component } from '@angular/core';
+import { interval } from 'rxjs';
 
 @Component({
   selector: 'app-no-comunes',
@@ -58,5 +59,14 @@ export class NoComunesComponent {
       vuela: false,
     }
   ];
+
+  //AyncPipe
+  miObservable = interval(5000);
+
+  valorPromesa = new Promise((resolve, reject) => {
+    setTimeout(() => {
+      resolve("Data de promesa");
+    }, 3500);
+  })
 
 }
