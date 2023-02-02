@@ -43,4 +43,20 @@ export class NoComunesComponent {
     direccion: "GC, Trux"
   }
 
+  //JsonPipe
+  heroes = [
+    {
+      nombre: "Superman",
+      vuela: true,
+    },
+    {
+      nombre: "Robin",
+      vuela: false,
+    },
+    {
+      nombre: "Aquaman",
+      vuela: false,
+    }
+  ];
+
 }
