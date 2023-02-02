@@ -6,6 +6,7 @@ import { BasicosComponent } from './pages/basicos/basicos.component';
 import { OrdenarComponent } from './pages/ordenar/ordenar.component';
 import { PrimeNgModule } from '../prime-ng/prime-ng.module';
 import { MayusculasPipe } from './pipes/mayusculas.pipes';
+import { VuelaPipe } from './pipes/vuela.pipe';
 
 
 
@@ -17,6 +18,7 @@ import { MayusculasPipe } from './pipes/mayusculas.pipes';
     OrdenarComponent,
     
     MayusculasPipe,
+    VuelaPipe,
   ],
   imports: [
     CommonModule,
