@@ -1,1 +1,25 @@
-<p>numeros works!</p>
+<div class="text-layout">
+    <h1>Decimal Pipes y Porcentajes</h1>
+    <p>
+        Pipes incluidos - Common Module
+    </p>
+</div>
+
+<div class="grid">
+    <div class="col sm:col-4">
+        <p-card header="Ventas Netas" subheader="del presenta año">
+            <i class="pi pi-dollar"></i>
+            {{ ventasNetas | number:"1.2-2" }}
+        </p-card>
+    </div>
+    <div class="col sm:col-4">
+        <p-card header="Ventas Brutas" subheader="del presenta año">
+            {{ (ventasNetas + 2000000) | currency:"CAD":"symbol-narrow":"1.4-4"}}
+        </p-card>
+    </div>
+    <div class="col sm:col-4">
+        <p-card header="Ganancia %" subheader="del presenta año">
+            {{ porcentaje | percent:"1.2-2" }}
+        </p-card>
+    </div>
+</div>
