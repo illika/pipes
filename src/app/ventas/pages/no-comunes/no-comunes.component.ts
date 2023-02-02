@@ -36,4 +36,11 @@ export class NoComunesComponent {
   }
 
 
+  //keyvalue
+  persona = {
+    nombre: "illika",
+    edad: 18,
+    direccion: "GC, Trux"
+  }
+
 }
