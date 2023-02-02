@@ -38,9 +38,11 @@ export class OrdenarComponent {
     }
   ]
 
+  heroes2: Heroes[] = [...this.heroes];
+
   ordenarPor: string = "";
 
-  cambiarMM() {    
+  cambiarMM() {
     this.enMayuscula = !this.enMayuscula;
   }
 
