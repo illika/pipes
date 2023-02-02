@@ -13,15 +13,18 @@
 
     <div class="p-toolbar-group-end">
         <button pButton (click)="cambiarMM()" label="Toggle Mayuscula" class="mr-1 p-button-warning"> </button>
-        <button pButton icon="pi pi-sort" label="Por Nombre" class="mr-1"></button>
-        <button pButton icon="pi pi-sort" label="Valores" class="mr-1 p-button-success"></button>
-        <button pButton icon="pi pi-sort" label="Por Color" class="mr-1 p-button-help"></button>
+        <button pButton icon="pi pi-sort" label="Por Nombre" 
+        (click)="cambiarorden('nombre')" class="mr-1"></button>
+        <button pButton icon="pi pi-sort" label="Vuela" 
+        (click)="cambiarorden('vuela')" class="mr-1 p-button-success"></button>
+        <button pButton icon="pi pi-sort" label="Por Color" 
+        (click)="cambiarorden('color')" class="mr-1 p-button-help"></button>
     </div>
 </p-toolbar>
 
 <div class="grid">
     <div class="col mt-2">
-        <p-table [value]="heroes" >
+        <p-table [value]="heroes | ordenar:ordenarPor" >
             <ng-template pTemplate="header">
                 <tr>
                     <th>Nombre</th>

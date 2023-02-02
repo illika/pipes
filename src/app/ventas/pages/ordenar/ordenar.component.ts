@@ -38,8 +38,14 @@ export class OrdenarComponent {
     }
   ]
 
+  ordenarPor: string = "";
+
   cambiarMM() {    
     this.enMayuscula = !this.enMayuscula;
+  }
+
+  cambiarorden(valor: string) {
+    this.ordenarPor = valor;
   }
 
 }
