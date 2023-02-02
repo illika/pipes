@@ -8,6 +8,12 @@ import { VentasModule } from './ventas/ventas.module';
 import { SharedModule } from './shared/shared.module';
 import { RouterModule } from '@angular/router';
 
+import { LOCALE_ID } from '@angular/core';
+// Cambiar Local
+import localEsPe from '@angular/common/locales/es-PE';
+import { registerLocaleData } from '@angular/common';
+registerLocaleData(localEsPe);
+
 @NgModule({
   declarations: [
     AppComponent
@@ -19,7 +25,9 @@ import { RouterModule } from '@angular/router';
     SharedModule, 
     VentasModule,
   ],
-  providers: [],
+  providers: [
+    {provide: LOCALE_ID, useValue: 'es-PE' }
+  ],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
